@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    color: rgb(250, 250, 250);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6)),url("../img/login_background.jpg");
+    background-size: cover;
+    transition: .5s;
+}
+.container{
+    position: relative;
+    width: 80vw;
+    height: 90vh;
+    margin: 20px;
+    overflow: hidden;
+   
+}
+.bg{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.bg .box{
+    position: relative;
+    width: 50%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+.btn{
+    position: relative; 
+    padding: 10px 30px;
+    margin: 20px;
+    font-size: 95%;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.479);
+    color:rgb(3, 0, 0); ;
+    box-shadow: 0 2px 45px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+.btn:hover{
+    padding: 15px 40px ;
+    margin: 15px; 
+    background-color: rgba(255, 247, 247, 0.904);
+    color:rgb(5, 5, 5); ;
+    box-shadow: 0 2px 45px rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+}
+.forms{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 5%;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6)),url(../img/student.jpg);
+    background-size: cover;
+    transition: .5s ease-in-out;
+}
+.active{
+    overflow-wrap: inherit;
+    left: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6)),url(../img/faculty1.jpg);
+    background-size: cover;
+    transition: .5s ease-in-out;
+}
+.forms .login-form{ 
+    position: absolute;
+    top: 10px;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    align-content: center;
+}
+
+
+.forms .login-form h2{
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 1.5em;
+}
+.forms .login-form .title{
+   margin-top: 2%;
+   font-size: 1em;
+}
+.forms .login-form input{
+
+    width: 100%;
+    padding: 2%;
+    margin: 3%;
+    font-size: .75em;
+    outline: none;
+    background-color: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    border-radius: 10%;
+    box-sizing: none;
+}
+.forms .login-form input[type='submit']{
+
+    width:100%;
+    padding: 10px 30px;
+    margin: 20px 0;
+    font-size: 95%;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.479);
+    color:rgb(3, 0, 0); ;
+    box-shadow: 0 2px 45px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+.forms .login-form input[type='submit']:hover{
+    font-size: 115%;
+    font-weight: 700;
+    background-color: rgba(255, 247, 247, 0.904);
+    color:rgb(5, 5, 5); ;
+}
+   
+@media (max-width: 750px) {
+    .forms .login-form{
+
+        font-size: 0.5em;
+
+        height: 105%;
+        overflow-y: scroll;
+        padding: 50px 0 50px 0;
+    }
+}
+.forms .form_hide{
+    display: none;
+} 
+.signuplink{
+    position: absolute;
+    top: 85%;
+    height: 15%;
+    width: 100%;
+    margin: 4.5% 0;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    
+}
+.signuplink a{
+    text-decoration: none;
+}
+.forms .display-error{
+    width: 90%;
+    display: flex;
+    position: absolute;
+    margin: 2% 10%;
+    text-align: center;
+    font-size: 0.75em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
